@@ -1,5 +1,13 @@
 {
+  "scripts": {
+    "dev:options": "vite dev/options",
+    "build:options": "vite build dev/options --outDir ../../options --emptyOutDir --base ./"
+  },
   "devDependencies": {
-    "@types/chrome": "^0.0.212"
+    "@material/mwc-textfield": "^0.27.0",
+    "@types/chrome": "^0.0.212",
+    "lit": "^2.6.1",
+    "prettier": "^2.8.4",
+    "vite": "^4.1.4"
   }
 }
