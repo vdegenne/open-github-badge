@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "open-github-badge",
+  "version": "1.0",
+  "action": {
+    "default_icon": {
+      "32": "images/icon32.png"
+    },
+    "default_title": "Open Github"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "activeTab"
+  ]
+}
