@@ -4,7 +4,8 @@
 	"version": "1.0",
 	"action": {
 		"default_icon": {
-			"32": "images/icon32.png"
+			"32": "images/icon32.png",
+			"128": "images/icon128.png"
 		},
 		"default_title": "Open Github"
 	},
