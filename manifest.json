@@ -1,19 +1,24 @@
 {
-  "manifest_version": 3,
-  "name": "open-github-badge",
-  "version": "1.0",
-  "action": {
-    "default_icon": {
-      "32": "images/icon32.png"
-    },
-    "default_title": "Open Github"
-  },
-  "background": {
-    "service_worker": "background.js"
-  },
-  "options_page": "options/index.html",
-  "permissions": [
-    "activeTab",
-    "storage"
-  ]
+	"manifest_version": 3,
+	"name": "open-github-badge",
+	"version": "1.0",
+	"action": {
+		"default_icon": {
+			"32": "images/icon32.png"
+		},
+		"default_title": "Open Github"
+	},
+	"background": {
+		"service_worker": "background.js"
+	},
+	"options_page": "options/index.html",
+	"permissions": ["activeTab", "storage"],
+	"commands": {
+		"open-link": {
+			"suggested_key": {
+				"default": "Alt+G"
+			},
+			"description": "Open repositories link"
+		}
+	}
 }

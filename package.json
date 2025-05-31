@@ -1,13 +1,30 @@
 {
-  "scripts": {
-    "dev:options": "vite dev/options",
-    "build:options": "vite build dev/options --outDir ../../options --emptyOutDir --base ./"
-  },
-  "devDependencies": {
-    "@material/mwc-textfield": "^0.27.0",
-    "@types/chrome": "^0.0.212",
-    "lit": "^2.6.1",
-    "prettier": "^2.8.4",
-    "vite": "^4.1.4"
-  }
+	"scripts": {
+		"build": "wireit"
+	},
+	"devDependencies": {
+		"@material/mwc-textfield": "^0.27.0",
+		"@types/chrome": "^0.0.212",
+		"lit": "^2.6.1",
+		"prettier": "^2.8.4",
+		"vite": "^4.1.4",
+		"wireit": "^0.14.12"
+	},
+	"wireit": {
+		"build": {
+			"dependencies": [
+				"build:options"
+			]
+		},
+		"build:options": {
+			"command": "vite build dev/options --outDir ../../options --emptyOutDir --base ./",
+			"files": [
+				"./dev/options/"
+			],
+			"output": [
+				"./options/"
+			]
+		}
+	}
 }
+
